@@ -1,0 +1,195 @@
+{
+    "tests": [
+      {
+        "name": "LevenshteinTester - (hello, hallo)",
+        "setup": "javac LevenshteinTester.java",
+        "run": "java LevenshteinTester hello hallo",
+        "input": "",
+        "output": "Levenshtein Distance between hello and hallo: 1",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "LevenshteinTester - (cat, category)",
+        "setup": "javac LevenshteinTester.java",
+        "run": "java LevenshteinTester cat category",
+        "input": "",
+        "output": "Levenshtein Distance between cat and category: 5",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "LevenshteinTester - (hello, hell)",
+        "setup": "javac LevenshteinTester.java",
+        "run": "java LevenshteinTester hello hell",
+        "input": "",
+        "output": "Levenshtein Distance between hello and hell: 1",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "LevenshteinTester - (hello, hell0)",
+        "setup": "javac LevenshteinTester.java",
+        "run": "java LevenshteinTester hello hell0",
+        "input": "",
+        "output": "Levenshtein Distance between hello and hell0: 1",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "LevenshteinTester - (concensus, consensus)",
+        "setup": "javac LevenshteinTester.java",
+        "run": "java LevenshteinTester concensus consensus",
+        "input": "",
+        "output": "Levenshtein Distance between concensus and consensus: 1",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "LevenshteinTester - (SPELL, spell)",
+        "setup": "javac LevenshteinTester.java",
+        "run": "java LevenshteinTester SPELL spell",
+        "input": "",
+        "output": "Levenshtein Distance between SPELL and spell: 0",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "SpellCheckerTester - (wombat, 2)",
+        "setup": "javac SpellCheckerTester.java",
+        "run": "java SpellCheckerTester wombat 2",
+        "input": "",
+        "output": "Original Word: wombat\nAnswer: woman",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "SpellCheckerTester - (h0llo, 1)",
+        "setup": "javac SpellCheckerTester.java",
+        "run": "java SpellCheckerTester h0llo 1",
+        "input": "",
+        "output": "Original Word: h0llo\nAnswer: hello",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "SpellCheckerTester - (hello, 1)",
+        "setup": "javac SpellCheckerTester.java",
+        "run": "java SpellCheckerTester hello 1",
+        "input": "",
+        "output": "Original Word: hello\nAnswer: hello",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "SpellCheckerTester - (coooool, 2)",
+        "setup": "javac SpellCheckerTester.java",
+        "run": "java SpellCheckerTester coooool 2",
+        "input": "",
+        "output": "Original Word: coooool\nAnswer: coooool",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "SpellCheckerTester - (coooool, 3)",
+        "setup": "javac SpellCheckerTester.java",
+        "run": "java SpellCheckerTester coooool 3",
+        "input": "",
+        "output": "Original Word: coooool\nAnswer: control",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "SpellCheckerTester - (evasdlsd, 2)",
+        "setup": "javac SpellCheckerTester.java",
+        "run": "java SpellCheckerTester evasdlsd 2",
+        "input": "",
+        "output": "Original Word: evasdlsd\nAnswer: evasdlsd",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "SpellCheckerTester - (ulximaxe, 2)",
+        "setup": "javac SpellCheckerTester.java",
+        "run": "java SpellCheckerTester ulximaxe 2",
+        "input": "",
+        "output": "Original Word: ulximaxe\nAnswer: ultimate",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "SpellCheckerTester - (ssccsss, 2)",
+        "setup": "javac SpellCheckerTester.java",
+        "run": "java SpellCheckerTester ssccsss 2",
+        "input": "",
+        "output": "Original Word: ssccsss\nAnswer: success",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "existInDictionary - Word Exists (word)",
+        "setup": "javac HashTagTokenizerTester.java",
+        "run": "java HashTagTokenizerTester existInDictionary word",
+        "input": "",
+        "output": "Word 'word' exists: true",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "existInDictionary - Word Does Not Exist (abc)",
+        "setup": "javac HashTagTokenizerTester.java",
+        "run": "java HashTagTokenizerTester existInDictionary abc",
+        "input": "",
+        "output": "Word 'abc' exists: false",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "readDictionary - Read Dictionary (dictionary.txt)",
+        "setup": "javac HashTagTokenizerTester.java",
+        "run": "java HashTagTokenizerTester readDictionary word",
+        "input": "",
+        "output": "Dictionary length: 3000",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "breakHashTag - happytolearncode",
+        "setup": "javac HashTagTokenizerTester.java",
+        "run": "java HashTagTokenizerTester breakHashTag happytolearncode",
+        "input": "",
+        "output": "happy\nto\nlearn\ncode",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 10
+      },
+      {
+        "name": "breakHashTag - ilovethecampus",
+        "setup": "javac HashTagTokenizerTester.java",
+        "run": "java HashTagTokenizerTester breakHashTag ilovethecamp",
+        "input": "",
+        "output": "i\nlove\nthe\ncamp",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      }
+    ]
+  }
+  
