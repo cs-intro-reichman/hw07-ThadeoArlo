@@ -12,12 +12,14 @@ public class SpellChecker {
 	}
 
 	public static int levenshtein(String word1, String word2) {
-		if (word1.length()==0) return word2.length();
-		if (word2.length()==0) return word1.length();
-		if (word1.charAt(0)==word2.charAt(0)) {
-			return levenshtein(tail(word1), tail(word2));
+		String word1Low=word1.toLowerCase();
+		String word2Low=word2.toLowerCase();
+		if (word1Low.length()==0) return word2Low.length();
+		if (word2Low.length()==0) return word1Low.length();
+		if (word1Low.charAt(0)==word2.charAt(0)) {
+			return levenshtein(tail(word1Low), tail(word2Low));
 		} else {
-			return 1+Math.min(Math.min(levenshtein(tail(word1), word2),levenshtein(word1, tail(word2))), levenshtein(tail(word1), tail(word2)));
+			return 1+Math.min(Math.min(levenshtein(tail(word1Low), word2Low),levenshtein(word1Low, tail(word2Low))), levenshtein(tail(word1Low), tail(word2Low)));
 		}
 	}
 
@@ -36,7 +38,7 @@ public class SpellChecker {
 		int minLev=1000;
 		for (String dictWord : dictionary) {
 			int lev = levenshtein(wordLow, dictWord);
-			if (lev < minLev) {
+			if (lev < minLev && lev <= threshold) {
 				minLev = lev;
 				wordMatch = dictWord;
 			}
